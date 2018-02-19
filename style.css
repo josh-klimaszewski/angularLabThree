@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box; 
  }
+
  main {
      margin: 0 auto;
      display: flex;
@@ -24,6 +25,11 @@
      border-radius: 5px;
      background-color: #eee;
  }
+ .startContainer, .endContainer {
+     position: relative;
+     
+ }
+ 
  ol {
      display: flex;
      flex-direction: column;
@@ -40,8 +46,30 @@
      border-radius: 3px;
      border: 1px solid #bbb;
  }
+a {
+    text-decoration: none;
+    color: #e41d98;
+}
+.arrow {
+    position: absolute;
+    top: -30%;
+}
 
+.enterArrow {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+}
+.backArrow {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+.backArrow .arrow {
+    left: -25px;
+}
  .heading {
+     padding-top: 10px;
      font-size: 1.5em;
      line-height: 0.2;
  }
@@ -55,6 +83,9 @@
      background-color: #e41d98;
      color: #eee;
  }
+
+ 
+ 
  li:hover {
      background-color: lightgrey;
  }

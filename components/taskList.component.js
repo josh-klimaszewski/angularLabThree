@@ -1,8 +1,6 @@
 (function () {
     var taskList = {
-        bindings: {
-            items: "<"
-        },
+        
         templateUrl: "partials/taskList.html",
         controller: function (FormService) {
             var vm = this;

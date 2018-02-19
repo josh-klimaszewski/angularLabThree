@@ -7,8 +7,10 @@
             returnInfo: returnInfo
         }
         function updateInfo(item) {
+            if (item) {
             items.push(item);
             document.getElementById('addInput').value = "";
+            }
         }
         function returnInfo() {
             return items;
