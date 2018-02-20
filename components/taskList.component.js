@@ -1,14 +1,15 @@
 (function () {
     var taskList = {
-        
+
         templateUrl: "partials/taskList.html",
         controller: function (FormService) {
             var vm = this;
             vm.itemsToDisplay = FormService.returnInfo();
-            
-            vm.rmInfo = function(item) {
+                
+            vm.rmInfo = function (item) {
                 FormService.removeInfo(item);
-            }  
+                
+            }
         }
     };
     angular
